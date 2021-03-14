@@ -30,7 +30,7 @@ logger = logging.getLogger(__name__)
 # context. Error handlers also receive the raised TelegramError object in error.
 def start(update, context):
     """Send a message when the command /start is issued."""
-    file = open('start.txt','r')
+    file = open('start.txt','r',encoding = 'utf-8')
     content = file.read()
     file.close()
 
@@ -66,7 +66,7 @@ def opportunities_for_the_student(update, context):
     update.callback_query.message.reply_text(text_opportunities_for_the_student, reply_markup = reply)
     
 def practice(update, context):
-    file = open('practice.txt','r')
+    file = open('practice.txt','r',encoding = 'utf-8')
     text_practice = file.read()
     file.close()
     
@@ -75,7 +75,7 @@ def practice(update, context):
     
 
 def Project_training(update, context):
-    file = open('Project_training.txt','r')
+    file = open('Project_training.txt','r',encoding = 'utf-8')
     text_Project_training = file.read()
     file.close()
     
@@ -83,13 +83,13 @@ def Project_training(update, context):
     
 
 def Dual_education(update, context):
-    file = open('Dual_education.txt','r')
+    file = open('Dual_education.txt','r',encoding = 'utf-8')
     text_Dual_education = file.read()
     file.close()
 
     update.callback_query.message.reply_text(text_Dual_education)
 def Employment(update, context):
-    file = open('Employment.txt','r')
+    file = open('Employment.txt','r',encoding = 'utf-8')
     text_Employment = file.read()
     file.close()
 
@@ -122,53 +122,53 @@ def about_of_CMAD_departament(update, context):
     update.callback_query.message.reply_text(text_about_of_CMAD_departament, reply_markup = reply)
         
 def Teachers(update, context):
-    file = open('Teachers.txt','r')
+    file = open('Teachers.txt','r',encoding = 'utf-8')
     text_Teachers = file.read()
     file.close()
     update.callback_query.message.reply_text(text_Teachers)
 def Principles_of_teaching(update, context):
-    file = open('Principles_of_teaching.txt','r')
+    file = open('Principles_of_teaching.txt','r',encoding = 'utf-8')
     text_Principles_of_teaching = file.read()
     file.close()
     update.callback_query.message.reply_text(text_Principles_of_teaching)
 def History_of_the_department(update, context):
-    file = open('History_of_the_department.txt','r')
+    file = open('History_of_the_department.txt','r',encoding = 'utf-8')
     text_History_of_the_department = file.read()
     file.close()
     update.callback_query.message.reply_text(text_History_of_the_department)
 def Audience_of_the_department(update, context):
-    file = open('Audience_of_the_department.txt','r')
+    file = open('Audience_of_the_department.txt','r',encoding = 'utf-8')
     text_Audience_of_the_department = file.read()
     file.close()
     update.callback_query.message.reply_text(text_Audience_of_the_department)
 def Our_graduates(update, context):
-    file = open('Our_graduates.txt','r')
+    file = open('Our_graduates.txt','r',encoding = 'utf-8')
     text_Our_graduates = file.read()
     file.close()
     update.callback_query.message.reply_text(text_Our_graduates)
 def ZNO_subjects(update, context):
-    file = open('ZNO_subjects.txt','r')
+    file = open('ZNO_subjects.txt','r',encoding = 'utf-8')
     text_ZNO_subjects = file.read()
     file.close()
     update.callback_query.message.reply_text(text_ZNO_subjects)
 def Calculation_of_the_competition(update, context):
-    file = open('Calculation_of_the_competition.txt','r')
+    file = open('Calculation_of_the_competition.txt','r',encoding = 'utf-8')
     text_Calculation_of_the_competition= file.read()
     file.close()
     update.callback_query.message.reply_text(text_Calculation_of_the_competition)
 def Stages_of_the_introductory_campaign(update, context):
-    file = open('Stages_of_the_introductory_campaign.txt','r')
+    file = open('Stages_of_the_introductory_campaign.txt','r',encoding = 'utf-8')
     text_Stages_of_the_introductory_campaign = file.read()
     file.close()
     update.callback_query.message.reply_text(text_Stages_of_the_introductory_campaign)
     
 def Useful_links(update, context):
-    file = open('Useful_links.txt','r')
+    file = open('Useful_links.txt','r',encoding = 'utf-8')
     text_Useful_links = file.read()
     file.close()
     update.callback_query.message.reply_text(text_Useful_links)
 def Number_of_bud(update, context):
-    file = open('Number_of_bud.txt','r')
+    file = open('Number_of_bud.txt','r',encoding = 'utf-8')
     text_Number_of_bud = file.read()
     file.close()
     update.callback_query.message.reply_text(text_Number_of_bud)
